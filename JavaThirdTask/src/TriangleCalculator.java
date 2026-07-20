@@ -1,7 +1,4 @@
-/**
- * Class to calculate triangle area and perimeter with input validation
- * and classification based on its side lengths using modern Java IO.
- */
+
 public class TriangleCalculator {
 
     public static void main(String[] args) {
