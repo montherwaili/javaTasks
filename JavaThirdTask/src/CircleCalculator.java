@@ -1,7 +1,4 @@
-/**
- * Class to calculate circle area and circumference with input validation
- * and classification based on the radius using modern Java IO features.
- */
+
 public class CircleCalculator {
 
     public static void main(String[] args) {
