@@ -6,7 +6,7 @@ public class CircleCalculator {
         double pi = 3.14;
 
         // Prompt the user using the new simplified IO print method
-        IO.print("Enter the radius of the circle: ");
+         IO.print("Enter the radius of the circle: ");
 
         // Read the user input directly as a line using modern Java IO and convert it to double
         String input = IO.readln();
