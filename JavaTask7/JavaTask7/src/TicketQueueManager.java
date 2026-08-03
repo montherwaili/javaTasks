@@ -19,11 +19,18 @@ public class TicketQueueManager {
             return;
         }
 
-        // 7. Use a for loop to read each customer name and add it using add() method
+        // 7. Use a for loop to read each customer name and add it safely
         for (int i = 1; i <= totalCustomers; i++) {
             IO.print("Enter customer name #" + i + ": ");
             String name = IO.readln().trim();
-            ticketQueue.add(name);
+
+            // FIXED: Added strict verification to reject empty or blank names
+            if (name.isBlank()) {
+                IO.println("Error: Customer name cannot be empty. Please re-enter.");
+                i--; // Decrement counter to retry this student registration slot properly
+            } else {
+                ticketQueue.add(name);
+            }
         }
 
         // 8. Display the menu system using a do-while loop
@@ -44,11 +51,17 @@ public class TicketQueueManager {
             // 10. Use a switch-case statement to process the user selection
             switch (choice) {
                 case 1 -> {
-                    // Add Customer Option using add()
+                    // Add Customer Option with validation check
                     IO.print("Enter new customer name: ");
                     String newCustomer = IO.readln().trim();
-                    ticketQueue.add(newCustomer);
-                    IO.println("Customer added successfully.");
+
+                    // FIXED: Added validation check to reject empty entries from the menu
+                    if (newCustomer.isBlank()) {
+                        IO.println("Error: Customer name cannot be empty.");
+                    } else {
+                        ticketQueue.add(newCustomer);
+                        IO.println("Customer added successfully.");
+                    }
                 }
                 case 2 -> {
                     // Serve Customer Option using remove()
