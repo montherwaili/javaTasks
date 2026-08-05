@@ -10,6 +10,7 @@ public class RecursiveStringReverser {
         printReverse(text);
         IO.println("\n==============================");
     }
+
     /**
      * A recursive method that prints a string in reverse, one character per call,
      * by executing the print statement AFTER the recursive call.
@@ -19,8 +20,11 @@ public class RecursiveStringReverser {
         if (str == null || str.isEmpty()) {
             return;
         }
+
         // 1. The Recursive Call: dive to the end of the string first using substring(1)
         printReverse(str.substring(1));
 
+        // 2. Code running AFTER the recursive call: prints characters as the stack unwinds (LIFO)
+        IO.print(str.charAt(0));
     }
 }
