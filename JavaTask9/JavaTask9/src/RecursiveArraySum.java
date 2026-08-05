@@ -22,6 +22,11 @@ public class RecursiveArraySum {
         // Call the helper recursive method starting from the first position (index 0)
         int totalSum = sumArray(numbers, 0);
 
+        // Print the final calculated result with a descriptive summary report
+        IO.println("\n=== Array Analysis Report ===");
+        IO.println("Total Elements Processed: " + size);
+        IO.println("Sum of Array Elements   : " + totalSum + " (Calculated via recursive indexing)");
+    }
 
     }
 }
