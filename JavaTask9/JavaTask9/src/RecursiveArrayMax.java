@@ -20,5 +20,12 @@ public class RecursiveArrayMax {
 
         // Call the helper recursive method starting from the first position (index 0)
         int maxNumber = findMax(numbers, 0);
+
+        // Print the final calculated result with a descriptive summary report
+        IO.println("\n=== Array Analysis Report ===");
+        IO.println("Total Elements Processed: " + size);
+        IO.println("Largest Number Found    : " + maxNumber + " (Calculated via recursive comparison)");
+    }
+    
     }
 }
