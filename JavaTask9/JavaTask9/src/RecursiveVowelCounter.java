@@ -22,5 +22,11 @@ public class RecursiveVowelCounter {
         }
 // Look at the first character and convert to lower case for uniform comparison
         char firstChar = Character.toLowerCase(str.charAt(0));
+
+        // Check if the first character matches any of the five vowels
+        int matchCount = 0;
+        if (firstChar == 'a' || firstChar == 'e' || firstChar == 'i' || firstChar == 'o' || firstChar == 'u') {
+            matchCount = 1;
+        }
     }
 }
