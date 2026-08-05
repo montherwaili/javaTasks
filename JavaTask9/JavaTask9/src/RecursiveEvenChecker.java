@@ -10,5 +10,7 @@ public class RecursiveEvenChecker {
             IO.println("Invalid input. Please enter a non-negative integer.");
             return;
         }
+        // Call the recursive method to check if the number is even
+        boolean isEvenResult = isEven(number);
     }
 }
