@@ -29,6 +29,9 @@ public class PowerOfTwoChecker {
         if (n == 1) {
             return true;
         }
-
+// Base case 3: if the number becomes odd and greater than 1, it cannot be a power of 2
+        if (n % 2 != 0) {
+            return false;
+        }
 
 }
