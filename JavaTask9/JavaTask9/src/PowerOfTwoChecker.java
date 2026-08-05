@@ -11,6 +11,11 @@ public class PowerOfTwoChecker {
 // Call the recursive method to check if the number is a power of 2
         boolean isPower = isPowerOfTwo(number);
 
+        // Print the final result summary with a descriptive status message
+        IO.println("\n=== Power of 2 Analysis Report ===");
+        IO.println("Original Number: " + number);
+        IO.println("Is Power of 2? : " + isPower);
+    }
 
 
 
