@@ -25,7 +25,10 @@ public class PowerOfTwoChecker {
         if (n == 0) {
             return false;
         }
-
+        // Base case 2: 1 is a power of 2 (2^0)
+        if (n == 1) {
+            return true;
+        }
 
 
 }
