@@ -22,6 +22,14 @@ public class RecursivePalindromeChecker {
         if (str == null || str.length() <= 1) {
             return true;
         }
+        // Compare the first character and the last character
+        char firstChar = str.charAt(0);
+        char lastChar = str.charAt(str.length() - 1);
+
+        // If they differ, it is not a palindrome
+        if (firstChar != lastChar) {
+            return false;
+        }
 
 
 
