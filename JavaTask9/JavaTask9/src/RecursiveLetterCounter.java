@@ -19,5 +19,13 @@ public class RecursiveLetterCounter {
 
         // Call the recursive method to count occurrences
         int totalOccurrences = countLetter(text, targetLetter);
+
+        // Print the final calculated result with a descriptive summary report
+        IO.println("\n=== Letter Occurrence Report ===");
+        IO.println("Original String: \"" + text + "\"");
+        IO.println("Target Letter  : '" + targetLetter + "'");
+        IO.println("Total Times    : " + totalOccurrences);
+    }
+    
     }
 }
