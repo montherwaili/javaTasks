@@ -20,6 +20,7 @@ public class RecursiveVowelCounter {
         if (str == null || str.isEmpty()) {
             return 0;
         }
-
+// Look at the first character and convert to lower case for uniform comparison
+        char firstChar = Character.toLowerCase(str.charAt(0));
     }
 }
