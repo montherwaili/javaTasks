@@ -35,5 +35,7 @@ public class RecursiveArrayMax {
         if (index == array.length - 1) {
             return array[index];
         }
+        // Recursive step: find the maximum of the remaining part of the array (index + 1)
+        int maxOfRest = findMax(array, index + 1);
     }
 }
