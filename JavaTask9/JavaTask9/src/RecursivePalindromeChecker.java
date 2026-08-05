@@ -31,6 +31,9 @@ public class RecursivePalindromeChecker {
             return false;
         }
 
+        // Recursive step: if they match, check the smaller middle part
+        return isPalindrome(str.substring(1, str.length() - 1));
 
 
+    }
 }
