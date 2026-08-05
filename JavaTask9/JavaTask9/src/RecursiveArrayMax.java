@@ -9,6 +9,7 @@ public class RecursiveArrayMax {
             IO.println("Invalid size. Please enter a number greater than 0.");
             return;
         }
-        
+        // Initialize the array with the user-defined size
+        int[] numbers = new int[size];
     }
 }
