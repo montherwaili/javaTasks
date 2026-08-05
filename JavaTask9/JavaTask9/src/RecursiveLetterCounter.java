@@ -16,5 +16,8 @@ public class RecursiveLetterCounter {
         }
         // Extract the first character from the input string as our target letter
         char targetLetter = targetInput.charAt(0);
+
+        // Call the recursive method to count occurrences
+        int totalOccurrences = countLetter(text, targetLetter);
     }
 }
