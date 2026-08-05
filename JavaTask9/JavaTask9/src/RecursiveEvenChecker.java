@@ -12,5 +12,18 @@ public class RecursiveEvenChecker {
         }
         // Call the recursive method to check if the number is even
         boolean isEvenResult = isEven(number);
+
+        // Print the final result summary with a descriptive status message
+        IO.println("\n=== Even Number Analysis Report ===");
+        IO.println("Original Number: " + number);
+        IO.println("Is Even Number? : " + isEvenResult + " (Calculated via subtraction subtraction)");
+    }
+
+
+
+
+
+
+    
     }
 }
