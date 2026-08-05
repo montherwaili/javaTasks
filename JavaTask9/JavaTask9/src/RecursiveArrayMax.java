@@ -11,5 +11,11 @@ public class RecursiveArrayMax {
         }
         // Initialize the array with the user-defined size
         int[] numbers = new int[size];
+
+        // Populate the array with integer values from the user
+        for (int i = 0; i < size; i++) {
+            IO.print("Enter element at index " + i + ": ");
+            numbers[i] = Integer.parseInt(IO.readln().trim());
+        }
     }
 }
