@@ -1,6 +1,6 @@
 public class RecursivePalindromeChecker {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // Prompt the user to enter a word using modern Java IO
         IO.print("Enter a word: ");
         String word = IO.readln().trim();
@@ -13,6 +13,7 @@ public class RecursivePalindromeChecker {
         IO.println("Original Word : \"" + word + "\"");
         IO.println("Is Palindrome?: " + isPalindromeResult);
     }
+
     /**
      * A recursive method that checks if a string is a palindrome
      * by comparing the first and last characters iteratively.
@@ -22,6 +23,7 @@ public class RecursivePalindromeChecker {
         if (str == null || str.length() <= 1) {
             return true;
         }
+
         // Compare the first character and the last character
         char firstChar = str.charAt(0);
         char lastChar = str.charAt(str.length() - 1);
@@ -33,7 +35,5 @@ public class RecursivePalindromeChecker {
 
         // Recursive step: if they match, check the smaller middle part
         return isPalindrome(str.substring(1, str.length() - 1));
-
-
     }
 }
