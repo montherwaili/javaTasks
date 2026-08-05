@@ -14,5 +14,7 @@ public class RecursiveLetterCounter {
             IO.println("Invalid input. Target letter cannot be empty.");
             return;
         }
+        // Extract the first character from the input string as our target letter
+        char targetLetter = targetInput.charAt(0);
     }
 }
