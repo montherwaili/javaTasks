@@ -26,6 +26,14 @@ public class RecursiveArrayMax {
         IO.println("Total Elements Processed: " + size);
         IO.println("Largest Number Found    : " + maxNumber + " (Calculated via recursive comparison)");
     }
-    
+    /**
+     * A recursive method that finds the maximum element in an array
+     * by comparing the current element with the maximum of the rest of the array.
+     */
+    public static int findMax(int[] array, int index) {
+        // Base case: if it is the last element, there is nothing after it to compare, so it is the max of itself
+        if (index == array.length - 1) {
+            return array[index];
+        }
     }
 }
