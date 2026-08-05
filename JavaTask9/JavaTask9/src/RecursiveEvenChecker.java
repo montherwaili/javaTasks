@@ -28,7 +28,10 @@ public class RecursiveEvenChecker {
             return true;
         }
 
-
+        // Base case 2: if the number reaches 1, it means it is odd
+        if (n == 1) {
+            return false;
+        }
 
 
 
