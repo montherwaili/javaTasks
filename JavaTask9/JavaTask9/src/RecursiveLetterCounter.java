@@ -26,6 +26,14 @@ public class RecursiveLetterCounter {
         IO.println("Target Letter  : '" + targetLetter + "'");
         IO.println("Total Times    : " + totalOccurrences);
     }
-    
+    /**
+     * A recursive method that counts how many times a given letter appears in a string.
+     * It checks the first character and recursively processes the rest of the string using substring(1).
+     */
+    public static int countLetter(String str, char letter) {
+        // Base case: if the string is null or empty, it contains the letter 0 times
+        if (str == null || str.isEmpty()) {
+            return 0;
+        }
     }
 }
