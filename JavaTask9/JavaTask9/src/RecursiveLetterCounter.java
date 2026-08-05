@@ -8,5 +8,11 @@ public class RecursiveLetterCounter {
         // Prompt the user to enter the target letter to count
         IO.print("Enter the letter to count: ");
         String targetInput = IO.readln().trim();
+
+        // Validate that the user entered at least one character for the target letter
+        if (targetInput.isEmpty()) {
+            IO.println("Invalid input. Target letter cannot be empty.");
+            return;
+        }
     }
 }
