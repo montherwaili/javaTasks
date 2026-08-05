@@ -19,5 +19,8 @@ public class RecursiveStringReverser {
         if (str == null || str.isEmpty()) {
             return;
         }
+        // 1. The Recursive Call: dive to the end of the string first using substring(1)
+        printReverse(str.substring(1));
+
     }
 }
