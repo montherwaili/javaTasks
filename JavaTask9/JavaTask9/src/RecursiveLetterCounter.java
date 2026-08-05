@@ -35,5 +35,7 @@ public class RecursiveLetterCounter {
         if (str == null || str.isEmpty()) {
             return 0;
         }
+        // Look at the first character and check if it matches the target letter
+        int matchCount = (str.charAt(0) == letter) ? 1 : 0;
     }
 }
