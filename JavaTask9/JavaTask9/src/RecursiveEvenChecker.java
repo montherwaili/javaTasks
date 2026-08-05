@@ -18,12 +18,20 @@ public class RecursiveEvenChecker {
         IO.println("Original Number: " + number);
         IO.println("Is Even Number? : " + isEvenResult + " (Calculated via subtraction subtraction)");
     }
+    /**
+     * A recursive method that checks if a number is even without using % or division
+     * by continuously subtracting 2.
+     */
+    public static boolean isEven(int n) {
+        // Base case 1: if the number reaches 0, it means it is even
+        if (n == 0) {
+            return true;
+        }
 
 
 
 
 
 
-    
     }
 }
