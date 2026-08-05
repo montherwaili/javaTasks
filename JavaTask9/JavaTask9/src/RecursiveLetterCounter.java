@@ -14,6 +14,7 @@ public class RecursiveLetterCounter {
             IO.println("Invalid input. Target letter cannot be empty.");
             return;
         }
+
         // Extract the first character from the input string as our target letter
         char targetLetter = targetInput.charAt(0);
 
@@ -26,6 +27,7 @@ public class RecursiveLetterCounter {
         IO.println("Target Letter  : '" + targetLetter + "'");
         IO.println("Total Times    : " + totalOccurrences);
     }
+
     /**
      * A recursive method that counts how many times a given letter appears in a string.
      * It checks the first character and recursively processes the rest of the string using substring(1).
@@ -35,7 +37,11 @@ public class RecursiveLetterCounter {
         if (str == null || str.isEmpty()) {
             return 0;
         }
+
         // Look at the first character and check if it matches the target letter
         int matchCount = (str.charAt(0) == letter) ? 1 : 0;
+
+        // Recursive step: add the current match count to the result of checking the rest of the string
+        return matchCount + countLetter(str.substring(1), letter);
     }
 }
