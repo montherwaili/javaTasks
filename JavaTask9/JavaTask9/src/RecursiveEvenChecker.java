@@ -10,6 +10,7 @@ public class RecursiveEvenChecker {
             IO.println("Invalid input. Please enter a non-negative integer.");
             return;
         }
+
         // Call the recursive method to check if the number is even
         boolean isEvenResult = isEven(number);
 
@@ -18,6 +19,7 @@ public class RecursiveEvenChecker {
         IO.println("Original Number: " + number);
         IO.println("Is Even Number? : " + isEvenResult + " (Calculated via subtraction subtraction)");
     }
+
     /**
      * A recursive method that checks if a number is even without using % or division
      * by continuously subtracting 2.
@@ -33,8 +35,7 @@ public class RecursiveEvenChecker {
             return false;
         }
 
-
-
-
+        // Recursive step: shrink the problem by subtracting a fixed step of 2
+        return isEven(n - 2);
     }
 }
