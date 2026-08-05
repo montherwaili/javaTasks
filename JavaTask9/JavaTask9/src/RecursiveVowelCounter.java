@@ -6,5 +6,10 @@ public class RecursiveVowelCounter {
         String text = IO.readln();
 // Call the recursive method to count vowels
         int totalVowels = countVowels(text);
+        // Print the final calculated result with a descriptive summary report
+        IO.println("\n=== Vowel Analysis Report ===");
+        IO.println("Original String: \" " + text + " \"");
+        IO.println("Total Vowels   : " + totalVowels + " (a, e, i, o, u)");
+    }
     }
 }
