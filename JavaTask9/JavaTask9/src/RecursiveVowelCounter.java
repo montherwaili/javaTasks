@@ -11,5 +11,15 @@ public class RecursiveVowelCounter {
         IO.println("Original String: \" " + text + " \"");
         IO.println("Total Vowels   : " + totalVowels + " (a, e, i, o, u)");
     }
+    /**
+     * A recursive method that counts the total number of vowels in a string.
+     * It checks the first character against the five vowel letters and processes the rest using substring(1).
+     */
+    public static int countVowels(String str) {
+        // Base case: if the string is null or empty, it contains 0 vowels
+        if (str == null || str.isEmpty()) {
+            return 0;
+        }
+
     }
 }
