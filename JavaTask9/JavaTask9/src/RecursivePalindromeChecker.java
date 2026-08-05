@@ -13,7 +13,15 @@ public class RecursivePalindromeChecker {
         IO.println("Original Word : \"" + word + "\"");
         IO.println("Is Palindrome?: " + isPalindromeResult);
     }
-
+    /**
+     * A recursive method that checks if a string is a palindrome
+     * by comparing the first and last characters iteratively.
+     */
+    public static boolean isPalindrome(String str) {
+        // Base case: a string of length 0 or 1 is always a palindrome
+        if (str == null || str.length() <= 1) {
+            return true;
+        }
 
 
 
