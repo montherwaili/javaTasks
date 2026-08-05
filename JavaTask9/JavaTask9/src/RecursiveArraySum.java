@@ -27,6 +27,15 @@ public class RecursiveArraySum {
         IO.println("Total Elements Processed: " + size);
         IO.println("Sum of Array Elements   : " + totalSum + " (Calculated via recursive indexing)");
     }
+    /**
+     * A recursive method that calculates the sum of all elements in an array
+     * by advancing a tracking index forward through each step.
+     */
+    public static int sumArray(int[] array, int index) {
+        // Base case: if the tracking index passes the end of the array, return 0
+        if (index >= array.length) {
+            return 0;
+        }
 
     }
 }
