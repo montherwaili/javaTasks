@@ -8,7 +8,8 @@ public class PowerOfTwoChecker {
             IO.println("Invalid input. Please enter a non-negative integer.");
             return;
         }
-
+// Call the recursive method to check if the number is a power of 2
+        boolean isPower = isPowerOfTwo(number);
 
 
 
