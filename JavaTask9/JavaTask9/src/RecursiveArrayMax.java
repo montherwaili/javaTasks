@@ -17,5 +17,8 @@ public class RecursiveArrayMax {
             IO.print("Enter element at index " + i + ": ");
             numbers[i] = Integer.parseInt(IO.readln().trim());
         }
+
+        // Call the helper recursive method starting from the first position (index 0)
+        int maxNumber = findMax(numbers, 0);
     }
 }
