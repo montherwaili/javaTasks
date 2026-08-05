@@ -16,7 +16,15 @@ public class PowerOfTwoChecker {
         IO.println("Original Number: " + number);
         IO.println("Is Power of 2? : " + isPower);
     }
-
+    /**
+     * A recursive method that checks if a positive number is a power of 2
+     * by continuously dividing it by 2.
+     */
+    public static boolean isPowerOfTwo(int n) {
+        // Base case 1: 0 is not a power of 2
+        if (n == 0) {
+            return false;
+        }
 
 
 
