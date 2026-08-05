@@ -1,4 +1,5 @@
 public class RecursiveArrayMax {
+
     public static void main(String[] args) {
         // Prompt the user to enter the size of the array
         IO.print("Enter the number of elements in the array: ");
@@ -9,6 +10,7 @@ public class RecursiveArrayMax {
             IO.println("Invalid size. Please enter a number greater than 0.");
             return;
         }
+
         // Initialize the array with the user-defined size
         int[] numbers = new int[size];
 
@@ -26,6 +28,7 @@ public class RecursiveArrayMax {
         IO.println("Total Elements Processed: " + size);
         IO.println("Largest Number Found    : " + maxNumber + " (Calculated via recursive comparison)");
     }
+
     /**
      * A recursive method that finds the maximum element in an array
      * by comparing the current element with the maximum of the rest of the array.
@@ -35,7 +38,15 @@ public class RecursiveArrayMax {
         if (index == array.length - 1) {
             return array[index];
         }
+
         // Recursive step: find the maximum of the remaining part of the array (index + 1)
         int maxOfRest = findMax(array, index + 1);
+
+        // Compare the current element with the maximum of the rest of the array, return whichever is bigger
+        if (array[index] > maxOfRest) {
+            return array[index];
+        } else {
+            return maxOfRest;
+        }
     }
 }
