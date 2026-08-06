@@ -13,5 +13,10 @@ public class RecursiveEvenSum {
         // Call the recursive method to compute the sum of even numbers
         int totalEvenSum = sumEvens(number);
 
-    }
+    }// Print the final calculated result with a descriptive summary report
+        IO.println("\n=== Even Number Summation Report ===");
+        IO.println("Upper Limit N  : " + number);
+        IO.println("Sum of Evens   : " + totalEvenSum + " (Calculated via recursive conditions)");
+}
+
 }
