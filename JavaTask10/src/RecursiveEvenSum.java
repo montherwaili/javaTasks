@@ -10,5 +10,8 @@ public class RecursiveEvenSum {
             return;
         }
 
+        // Call the recursive method to compute the sum of even numbers
+        int totalEvenSum = sumEvens(number);
+
     }
 }
