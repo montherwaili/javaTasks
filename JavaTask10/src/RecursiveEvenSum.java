@@ -29,7 +29,11 @@ public class RecursiveEvenSum {
         if (n < 1) {
             return 0;
         }
+
         // Check if the current value of N is even
         int currentCount = (n % 2 == 0) ? n : 0;
 
+        // Recursive step: combine the current value decision with the result of N - 1
+        return currentCount + sumEvens(n - 1);
     }
+}
