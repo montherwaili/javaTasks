@@ -28,7 +28,7 @@ public class ClinicManager {
         boolean exit = false;
         while (!exit) {
             System.out.println("\n--- CLINIC MENU ---");
-            System.out.println("1. Add booked 2. Add walk-in 3. Print queue 4. Longest wait 5. Exit");
+            System.out.println("1.Add booked    2.Add walk-in   3.Print queue    4.Longest wait    5.Exit");
             System.out.print("Choose: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Clear buffer
