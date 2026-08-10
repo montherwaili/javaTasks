@@ -1,3 +1,5 @@
+package Task411;
+
 class Book implements LibraryItem {
 
     private String title;
@@ -50,7 +52,7 @@ class Book implements LibraryItem {
     }
 
     public void printAllInfo() {
-        System.out.println("Book: " + getLabel() + " (" + this.pages + " pages) [" + getShelfCode() + "]");
+        System.out.println("Task411.Book: " + getLabel() + " (" + this.pages + " pages) [" + getShelfCode() + "]");
     }
 
     public String getLabel() {

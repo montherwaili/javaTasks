@@ -1,10 +1,12 @@
+package Task411;
+
 class Magazine implements LibraryItem {
     private String name;
     private int issueNumber;
     private String month;
 
     public Magazine() {
-        setName("Unnamed Magazine");
+        setName("Unnamed Task411.Magazine");
         setIssueNumber(1);
         setMonth("January");
     }
@@ -47,7 +49,7 @@ class Magazine implements LibraryItem {
     }
 
     public void printAllInfo() {
-        System.out.println("Magazine: " + getLabel() + " [" + getShelfCode() + "]");
+        System.out.println("Task411.Magazine: " + getLabel() + " [" + getShelfCode() + "]");
     }
 
     public String getLabel() {
