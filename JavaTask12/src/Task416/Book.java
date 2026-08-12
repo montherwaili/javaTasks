@@ -7,6 +7,10 @@ public class Book {
     String title;
     String author;
 
-
+    // Step 3: Add one behaviour (method)
+    public void printInfo() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+    }
 
 }
