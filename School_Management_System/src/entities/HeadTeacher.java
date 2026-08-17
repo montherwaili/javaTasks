@@ -18,3 +18,7 @@ public class HeadTeacher extends Teacher {
     public String getDepartment() { return department; }
     public int getTeachersManaged() { return teachersManaged; }
     public void setDepartment(String department) { this.department = department; }
+
+    public void addManagedTeacher() {
+        teachersManaged = teachersManaged + 1;
+    }
