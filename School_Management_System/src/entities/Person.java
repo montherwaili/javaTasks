@@ -11,7 +11,7 @@ public class Person implements Displayable {
     private String phoneNumber;
     private String email;
     private String address;
-}
+
 public Person(String id, String firstName, String lastName, String dateOfBirth,String gender, String phoneNumber, String email, String address){
     setId(id);
 
@@ -65,21 +65,15 @@ public String displaySummary() {
 @Override
 public String toString() {
     return "Person{id=" + id + ", name=" + firstName + " " + lastName + "}";
-} 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// compare by id, not by ==
+@Override
+public boolean equals(Object other) {
+    if (this == other) return true;
+    if (other == null) return false;
+    if (!(other instanceof Person)) return false;
+    Person p = (Person) other;
+    return this.id.equals(p.id);
+ }
 }
