@@ -14,3 +14,7 @@ public class HeadTeacher extends Teacher {
         this.department = department;
         this.teachersManaged = teachersManaged;
     }
+
+    public String getDepartment() { return department; }
+    public int getTeachersManaged() { return teachersManaged; }
+    public void setDepartment(String department) { this.department = department; }
