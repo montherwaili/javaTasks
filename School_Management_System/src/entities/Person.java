@@ -48,6 +48,29 @@ public void setDateOfBirth(String dateOfBirth) { this.dateOfBirth = dateOfBirth;
 public void setGender(String gender) { this.gender = gender; }
 public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 public void setEmail(String email) { this.email = email; }
-public void setAddress(String address) { this.address = address; } 
+public void setAddress(String address) { this.address = address; }
+
+// parent version of displayInfo()
+@Override
+public void displayInfo() {
+    IO.println("Person: " + firstName + " " + lastName + " (id: " + id + ")");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
