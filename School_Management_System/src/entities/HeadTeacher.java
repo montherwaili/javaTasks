@@ -22,3 +22,10 @@ public class HeadTeacher extends Teacher {
     public void addManagedTeacher() {
         teachersManaged = teachersManaged + 1;
     }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Head Teacher: " + getFirstName() + " " + getLastName()
+                + " | department: " + department + " | manages: " + teachersManaged + " teachers");
+    }
+}
