@@ -42,5 +42,18 @@ public class Teacher extends Person {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public void setExperienceYears(int experienceYears) {
+        if (experienceYears < 0) {                  // must be 0 or more
+            System.out.println("Experience cannot be below 0. Keeping it at 0.");
+            this.experienceYears = 0;
+            return;
+        }
+        this.experienceYears = experienceYears;
+    }
+
+    public void addClass(String className) {
+        classesTaught.add(className);
+    }
     }
 }
