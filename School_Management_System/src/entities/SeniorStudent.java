@@ -9,3 +9,9 @@ public class SeniorStudent extends Student {
                          String gender, String phoneNumber, String email, String address,
                          String gradeLevel, String enrollmentDate, double feeBalance,
                          String major, double gpa) {
+        // super(...) goes all the way up: SeniorStudent -> Student -> Person
+        super(id, firstName, lastName, dateOfBirth, gender, phoneNumber, email, address,
+                gradeLevel, enrollmentDate, feeBalance);
+        this.major = major;
+        this.gpa = gpa;
+    }
