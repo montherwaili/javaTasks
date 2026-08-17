@@ -56,6 +56,11 @@ public void displayInfo() {
     IO.println("Person: " + firstName + " " + lastName + " (id: " + id + ")");
 }
 
+// short one-line summary (from the Displayable interface)
+@Override
+public String displaySummary() {
+    return id + " - " + firstName + " " + lastName;
+}
 
 
 
