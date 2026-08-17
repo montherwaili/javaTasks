@@ -62,6 +62,10 @@ public String displaySummary() {
     return id + " - " + firstName + " " + lastName;
 }
 
+@Override
+public String toString() {
+    return "Person{id=" + id + ", name=" + firstName + " " + lastName + "}";
+} 
 
 
 
