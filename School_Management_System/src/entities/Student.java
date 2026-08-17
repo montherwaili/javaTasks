@@ -20,4 +20,14 @@ public class Student extends Person {
             setFeeBalance(feeBalance);   // check runs
             this.subjects = new ArrayList<>();
     }
+
+    public String getGradeLevel() { return gradeLevel; }
+    public String getEnrollmentDate() { return enrollmentDate; }
+    public double getFeeBalance() { return feeBalance; }
+    public List<String> getSubjects() { return subjects; }
+
+    public void setGradeLevel(String gradeLevel) { this.gradeLevel = gradeLevel; }
+    public void setEnrollmentDate(String enrollmentDate) { this.enrollmentDate = enrollmentDate; }
+
+    public void setFeeBalance(double feeBalance) {
 }
