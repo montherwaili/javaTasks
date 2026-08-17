@@ -1,4 +1,8 @@
 package entities;
 
-public class Student {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student extends Person {
+    
 }
