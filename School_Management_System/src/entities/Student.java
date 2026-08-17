@@ -41,6 +41,20 @@ public class Student extends Person {
     public void addSubject(String subject) {
         subjects.add(subject);
     }
+    // OVERLOADING
+    public void updateContact(String phone) {
+        setPhoneNumber(phone);
+    }
+    public void updateContact(String phone, String email) {
+        setPhoneNumber(phone);
+        setEmail(email);
+    }
+    // OVERRIDING: this class writes its own displayInfo()
+    @Override
+    public void displayInfo() {
+        System.out.println("Student: " + getFirstName() + " " + getLastName()
+                + " | grade: " + gradeLevel + " | fee balance: " + feeBalance);
+    }
 
 }
 
