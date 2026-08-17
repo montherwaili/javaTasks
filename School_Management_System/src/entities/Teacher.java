@@ -1,4 +1,7 @@
 package entities;
 
-public class Teacher {
+import java.util.ArrayList;
+import java.util.List;
+
+    }
 }
