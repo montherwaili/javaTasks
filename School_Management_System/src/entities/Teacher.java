@@ -18,5 +18,29 @@ public class Teacher extends Person {
         this.salary = salary;
         this.classesTaught = new ArrayList<>();
     }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public int getExperienceYears() {
+        return experienceYears;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public List<String> getClassesTaught() {
+        return classesTaught;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
     }
 }
