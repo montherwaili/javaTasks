@@ -32,3 +32,13 @@ public class SchoolApp {
         }
         System.out.println("Goodbye.");
     }
+
+    private void printMenu() {
+        System.out.println();
+        System.out.println("=== School Menu ===");
+        System.out.println("1. Add student");
+        System.out.println("2. View all students");
+        System.out.println("3. Search student by id");
+        System.out.println("4. Exit");
+    }
+
