@@ -16,4 +16,9 @@ public class InputHandler {
             System.out.print("Please type a whole number: ");
             scanner.next();
         }
+        int value = scanner.nextInt();
+        scanner.nextLine();   // clear the line
+        return value;
+    }
+
 }
