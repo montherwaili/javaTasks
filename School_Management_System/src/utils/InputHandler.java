@@ -30,4 +30,15 @@ public int getIntInput(String prompt, int min, int max) {
         System.out.println("Please enter a number between " + min + " and " + max + ".");
     }
 }
+
+public double getDoubleInput(String prompt) {
+    System.out.print(prompt + " ");
+    while (!scanner.hasNextDouble()) {
+        System.out.print("Please type a number: ");
+        scanner.next();
+    }
+    double value = scanner.nextDouble();
+    scanner.nextLine();
+    return value;
+}
 }
