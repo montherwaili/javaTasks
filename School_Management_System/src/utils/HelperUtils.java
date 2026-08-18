@@ -47,4 +47,9 @@ public class HelperUtils {
     public static boolean isValidNumber(double n, double min, double max) {
         return n >= min && n <= max;
     }
+
+    // ---- isValidAge ----
+    public static boolean isValidAge(int age) {
+        return age >= 0 && age <= 120;
+    }
 }
