@@ -17,3 +17,18 @@ public class SchoolApp {
         app.run();
     }
 
+    // main only starts the app; the work is in small methods 
+    public void run() {
+        boolean exit = false;
+        while (exit == false) {
+            printMenu();
+            int choice = input.getIntInput("Choose:", 1, 4);
+            switch (choice) {
+                case 1: addStudent(); break;
+                case 2: viewAllStudents(); break;
+                case 3: searchStudent(); break;
+                case 4: exit = true; break;
+            }
+        }
+        System.out.println("Goodbye.");
+    }
