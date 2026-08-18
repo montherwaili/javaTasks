@@ -41,4 +41,10 @@ public double getDoubleInput(String prompt) {
     scanner.nextLine();
     return value;
 }
+
+public boolean getConfirmation(String prompt) {
+    System.out.print(prompt + " (yes/no) ");
+    String answer = scanner.nextLine().trim().toLowerCase();
+    return answer.equals("yes") || answer.equals("y");
+}
 }
