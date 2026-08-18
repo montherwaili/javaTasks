@@ -39,4 +39,12 @@ public class HelperUtils {
     public static boolean isPositive(double n) {
         return n > 0;
     }
+
+    // ---- isValidNumber (overloaded) ----
+    public static boolean isValidNumber(int n, int min, int max) {
+        return n >= min && n <= max;
+    }
+    public static boolean isValidNumber(double n, double min, double max) {
+        return n >= min && n <= max;
+    }
 }
