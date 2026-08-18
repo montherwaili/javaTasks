@@ -15,4 +15,14 @@ public class HelperUtils {
     public static boolean isEmpty(List<?> list) {
         return list == null || list.isEmpty();
     }
+    // ---- isValidString (overloaded x3) ----
+    public static boolean isValidString(String s) {
+        return !isEmpty(s);
+    }
+    public static boolean isValidString(String s, int minLength) {
+        return !isEmpty(s) && s.trim().length() >= minLength;
+    }
+    public static boolean isValidString(String s, int min, int max) {
+        return !isEmpty(s) && s.trim().length() >= min && s.trim().length() <= max;
+    }
 }
