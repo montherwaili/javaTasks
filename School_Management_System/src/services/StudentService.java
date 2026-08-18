@@ -54,3 +54,14 @@ public class StudentService implements Manageable<Student>, Searchable<Student> 
         return students;
     }
 
+    // ---- from the Searchable interface ----
+    @Override
+    public Student searchById(String id) {
+        for (Student s : students) {
+            if (s.getId().equals(id)) {   // use .equals(), not ==
+                return s;
+            }
+        }
+        return null;
+    }
+
