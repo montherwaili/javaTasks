@@ -50,3 +50,10 @@ public class SchoolApp {
         System.out.println("Added: " + s.displaySummary());
     }
 
+    private void viewAllStudents() {
+        System.out.println("--- All students ---");
+        for (Student s : studentService.getAll()) {
+            s.displayInfo();
+        }
+    }
+
