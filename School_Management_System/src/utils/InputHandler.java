@@ -21,4 +21,13 @@ public class InputHandler {
         return value;
     }
 
+public int getIntInput(String prompt, int min, int max) {
+    while (true) {
+        int value = getIntInput(prompt);
+        if (HelperUtils.isValidNumber(value, min, max)) {
+            return value;
+        }
+        System.out.println("Please enter a number between " + min + " and " + max + ".");
+    }
+}
 }
