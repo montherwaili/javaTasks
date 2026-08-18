@@ -19,3 +19,11 @@ public class StudentService implements Manageable<Student>, Searchable<Student> 
         students.add(s);
         return s;
     }
+
+    public Student addStudent(String firstName, String lastName, String phone, String gradeLevel) {
+        String id = HelperUtils.generateId("STU");
+        Student s = new Student(id, firstName, lastName, "", "", phone, "", "",
+                gradeLevel, "2026-01-01", 0);
+        students.add(s);
+        return s;
+    }
