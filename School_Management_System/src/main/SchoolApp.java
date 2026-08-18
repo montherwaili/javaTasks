@@ -67,3 +67,14 @@ public class SchoolApp {
         }
     }
 
+    // fills the system so every option can be tested 
+    public void loadSampleData() {
+        studentService.addStudent("Ali", "Khan", "90000001");
+        studentService.addStudent("Layla", "Balushi", "90000002", "Grade 9");
+
+        SeniorStudent senior = new SeniorStudent("STU-90", "Maryam", "Said", "2005-02-15",
+                "Female", "90000003", "maryam@school.om", "Salalah",
+                "Grade 12", "2024-01-01", 100.0, "Science", 3.8);
+        studentService.add(senior);
+    }
+} 
