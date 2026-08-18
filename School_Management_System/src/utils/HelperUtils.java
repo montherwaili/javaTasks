@@ -32,4 +32,11 @@ public class HelperUtils {
     public static String generateId(String prefix) {
         return prefix + "-" + (counter++);
     }
+    // ---- isPositive (overloaded) ----
+    public static boolean isPositive(int n) {
+        return n > 0;
+    }
+    public static boolean isPositive(double n) {
+        return n > 0;
+    }
 }
