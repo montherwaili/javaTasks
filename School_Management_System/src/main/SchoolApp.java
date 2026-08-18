@@ -57,3 +57,13 @@ public class SchoolApp {
         }
     }
 
+    private void searchStudent() {
+        String id = input.getStringInput("Enter id:");
+        Student s = studentService.searchById(id);
+        if (s == null) {
+            System.out.println("No student with that id.");
+        } else {
+            s.displayInfo();
+        }
+    }
+
