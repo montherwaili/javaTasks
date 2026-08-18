@@ -42,3 +42,11 @@ public class SchoolApp {
         System.out.println("4. Exit");
     }
 
+    private void addStudent() {
+        String first = input.getStringInput("First name:");
+        String last = input.getStringInput("Last name:");
+        String phone = input.getStringInput("Phone:");
+        Student s = studentService.addStudent(first, last, phone);
+        System.out.println("Added: " + s.displaySummary());
+    }
+
