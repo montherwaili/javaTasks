@@ -33,3 +33,9 @@ public class StudentService implements Manageable<Student>, Searchable<Student> 
         return student;
     }
 
+    // ---- from the Manageable interface ----
+    @Override
+    public void add(Student student) {
+        students.add(student);
+    }
+
