@@ -25,4 +25,11 @@ public class HelperUtils {
     public static boolean isValidString(String s, int min, int max) {
         return !isEmpty(s) && s.trim().length() >= min && s.trim().length() <= max;
     }
+    // ---- generateId (overloaded) ----
+    public static String generateId() {
+        return "ID-" + (counter++);
+    }
+    public static String generateId(String prefix) {
+        return prefix + "-" + (counter++);
+    }
 }
