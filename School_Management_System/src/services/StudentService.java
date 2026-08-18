@@ -65,3 +65,14 @@ public class StudentService implements Manageable<Student>, Searchable<Student> 
         return null;
     }
 
+    @Override
+    public List<Student> search(String keyword) {
+        List<Student> results = new ArrayList<>();
+        for (Student s : students) {
+            if (s.getFirstName().contains(keyword) || s.getLastName().contains(keyword)) {
+                results.add(s);
+            }
+        }
+        return results;
+    }
+}
